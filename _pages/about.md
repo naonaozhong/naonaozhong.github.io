@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# About Me [📄 Download my CV](/files/resume.pdf)
+# About Me [CV](/files/resume.pdf)
 
 I am an undergraduate student in **Data Science** at **Fudan University**, interested in understanding how the brain works through physical principles, theoretical modeling, and data science. I am also interested in neural coding and brain–computer interfaces, especially in discovering more robust and generalizable patterns of neural representation. 
 
@@ -29,8 +29,9 @@ As an undergrad, I'm still figuring things out, and I'd be thrilled to connect w
 
 # 🔬 About Research
 
-- My research preference is more **object-oriented**: to find a meaningful object of study, continuously uncover its properties, and understand it more deeply. I believe that sufficiently deep understanding of an object will eventually lead to new theories.
-- For now, I am more interested in approaching the problem from the perspective of **prediction**: as **larger and richer datasets** become available, perhaps we can observe new structures, constraints, and principles hidden within neural systems.  
+My research preference is more **object-oriented**: to find a meaningful object of study, continuously uncover its properties, and understand it more deeply. I believe that sufficiently deep understanding of an object will eventually lead to new theories.
+
+For now, I am more interested in approaching the problem from the perspective of **prediction**: as **larger and richer datasets** become available, perhaps we can observe new structures, constraints, and principles hidden within neural systems.  
 
 Three questions fascinate me most:
 
@@ -40,11 +41,9 @@ Three questions fascinate me most:
 
 > Science asks what is true.  
 > Art tells what looks good.
-
 <span class='anchor' id='roadmap'></span>
 
-# RoadMap
-
+#  🗺 RoadMap
 ## On going
 ### Math
 - Optimization(including Bayesian Optimization)

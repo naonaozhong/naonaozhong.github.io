@@ -7,7 +7,7 @@ main:
     url: "/files/resume.pdf/"
 
   - title: "Research"
-    url: "/#research/"
+    url: "/#research"
 
   - title: "Roadmap"
-    url: "/#roadmap/"
+    url: "/#roadmap"

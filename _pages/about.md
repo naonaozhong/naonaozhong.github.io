@@ -29,18 +29,19 @@ As an undergrad, I'm still figuring things out, and I'd be thrilled to connect w
 
 # 🔬 About Research
 
-My research preference is more **object-oriented**: to find a meaningful object of study, continuously uncover its properties, and understand it more deeply. I believe that sufficiently deep understanding of an object will eventually lead to new theories.
+My research style is **object-oriented**: to find a meaningful object of study, continuously uncover **its properties**, and understand it more deeply. I believe that sufficiently deep understanding of an object will eventually lead to new theories.  
 
-For now, I am more interested in approaching the problem from the perspective of **prediction**: as **larger and richer datasets** become available, perhaps we can observe new structures, constraints, and principles hidden within neural systems.  
+Much of my thinking is from mathematics. **Analysis** teaches me to seek the limit and convergence of a process. **Algebra** teaches me to construct relationships between objects, step by step. **Geometry** gives me intuition and urges me to find something invariant. **Probability theory and statistics** tell me that one can derive deep understanding from limited information.  
 
 Three questions fascinate me most:
 
-- Latent space: physically instantiated substrate or informational mixture?
-- Optimal level for neural computation: single neuron, connectome, or population activity?
-- Mathematical structure of data: towards an information-theoretic characterization.
+- **Latent space**: physically instantiated substrate or informational mixture?
+- **Optimal level for neural computation**: single neuron, connectome, or population activity?
+- **Mathematical structure of data**: towards an information-theoretic characterization.
 
 > Science asks what is true.  
 > Art tells what looks good.
+> Scientific Reasearch combines the two.
 <span class='anchor' id='roadmap'></span>
 
 #  🗺 RoadMap
@@ -57,19 +58,20 @@ Three questions fascinate me most:
 
 ### Neuroscience
 - [Machine Learning Methods for Neural Data Analysis taught by Scott Linderman](https://slinderman.github.io/stats320/) 
-- Reviewing the classic literature
+- Reviewing classic literature
 
 ## Done
 ### Math
-- Analysis, Modern Analysis(Measure Theory and Integration)
-- Linear Algebra & Matrix analysis  
-- Probability Theory
+- Analysis 《数学分析教程,常庚哲、史济怀》
+- Modern Analysis(Measure Theory and Integration) *Real Analysis (By Gerald B. Folland)*
+- Linear Algebra & Matrix analysis  ["A very nice course by Prof. Xie"](https://www.bilibili.com/video/BV1mJ411r7ZB/?spm_id_from=333.337.search-card.all.click&vd_source=e9f864335bda5b3eee52728273d63211)
+- Probability Theory *Probability Theory and Examples (by Rick Durret)*
 
 ### Computer Science
 - Programming
-- Data Structure
-- AI (from svm to deep learning)
+- Data Structure & some Algorithm ["CS61b Berkeley"](https://sp24.datastructur.es/)
+- AI ["Dive into DeepLearning"](https://zh.d2l.ai/) and ["Recordings"](https://space.bilibili.com/1567748478/lists/358497?type=series)
 
 ### Neuroscience
-- recommend: *Principles of Neurobiology* by professor Liqun Luo
+- Recommend: *Principles of Neurobiology* by professor Liqun Luo
 - Experience in Animal and Electrophysical Experiments

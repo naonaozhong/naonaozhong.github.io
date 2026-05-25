@@ -107,3 +107,80 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+.research-overview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+
+    @include breakpoint($medium) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.research-card {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    padding: 1rem;
+    background: mix(#fff, $lighter-gray, 45%);
+
+    h2 {
+        margin: .35rem 0 .5rem;
+        padding-bottom: 0;
+        border-bottom: 0;
+        font-size: $type-size-5;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: $type-size-6;
+        line-height: 1.55;
+    }
+}
+
+.research-card__label {
+    color: $gray;
+    font-family: $sans-serif;
+    font-size: $type-size-7;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.research-project {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .4rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid $border-color;
+
+    @include breakpoint($medium) {
+        grid-template-columns: 9rem 1fr;
+        gap: 1.25rem;
+    }
+}
+
+.research-project__meta {
+    color: $gray;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+    font-weight: bold;
+}
+
+.research-project__body {
+    h3 {
+        margin: 0 0 .4rem;
+        font-size: $type-size-5;
+    }
+
+    p {
+        margin-bottom: .5rem;
+    }
+}
+
+.research-project__tags {
+    color: $gray;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+}

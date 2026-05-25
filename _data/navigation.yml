@@ -4,10 +4,10 @@ main:
     url: "/#about-me"
 
   - title: "CV"
-    url: "/files/resume.pdf/"
+    url: "/files/resume-zh_EN.pdf"
 
   - title: "Research"
-    url: "/#research"
+    url: "/research/"
 
   - title: "Roadmap"
     url: "/#roadmap"

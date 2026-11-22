@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ excerpt or site.description }}">
+    {% if page.url != '/404.html' %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ excerpt or site.description }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.author.avatar }}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="stylesheet" href="/assets/css/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% include "navigation.njk" %}
+    <div class="site-layout">
+      {% include "profile.njk" %}
+      <main id="main" class="page-content" tabindex="-1">
+        <article>{{ content | safe }}</article>
+      </main>
+    </div>
+  </body>
+</html>

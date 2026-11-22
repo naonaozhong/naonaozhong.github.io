@@ -1,0 +1,13 @@
+<aside class="profile" aria-label="Author profile" itemscope itemtype="https://schema.org/Person">
+  <img class="profile-avatar" src="{{ site.author.avatar }}" alt="{{ site.author.name }}" width="175" height="175" itemprop="image">
+  <div class="profile-details">
+    <h2 class="profile-name" itemprop="name">{{ site.author.name }}</h2>
+    <p class="profile-bio" itemprop="affiliation">{{ site.author.bio }}</p>
+    <p class="profile-description">{{ site.description }}</p>
+    <ul class="profile-links">
+      <li>{{ site.author.location }}</li>
+      <li><a href="mailto:{{ site.author.email }}" itemprop="email">Email</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}" itemprop="sameAs">Github</a></li>
+    </ul>
+  </div>
+</aside>

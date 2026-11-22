@@ -1,4 +1,5 @@
 ---
+layout: default
 permalink: /research/
 title: "Research Philosophy"
 excerpt: "How I currently think about research questions, mathematical tools, and neural data."

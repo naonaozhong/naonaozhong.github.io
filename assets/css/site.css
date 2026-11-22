@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+  --text: #3f454b;
+  --muted: #606970;
+  --link: #224b8d;
+  --border: #e7e9eb;
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.65;
+  color: var(--text);
+  background: #fff;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--link); text-underline-offset: 0.18em; }
+a:hover { color: #16335f; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+img { max-width: 100%; height: auto; }
+
+.skip-link {
+  position: fixed;
+  top: -5rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.65rem 1rem;
+  background: #fff;
+  border: 2px solid var(--link);
+}
+.skip-link:focus { top: 0.5rem; }
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 80rem;
+  min-height: 4.25rem;
+  margin: auto;
+  padding: 0.75rem 2rem;
+}
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation a {
+  display: inline-block;
+  padding: 0.3rem 0;
+  color: var(--muted);
+  text-decoration: none;
+}
+.navigation a:hover,
+.navigation a[aria-current="page"] { color: var(--link); text-decoration: underline; }
+.navigation .home-link { color: var(--text); font-weight: 700; white-space: nowrap; }
+
+.site-layout {
+  display: grid;
+  grid-template-columns: 13rem minmax(0, 1fr);
+  align-items: start;
+  gap: 3rem;
+  max-width: 80rem;
+  margin: 2.5rem auto 5rem;
+  padding: 0 2rem;
+}
+.profile { position: sticky; top: 6.5rem; }
+.profile-avatar {
+  display: block;
+  width: 175px;
+  height: 175px;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-name { margin: 1rem 0 0.25rem; font-size: 1.4rem; line-height: 1.3; }
+.profile-bio { margin: 0 0 1rem; }
+.profile-description { margin: 0 0 1rem; }
+.profile-links { margin: 0; padding: 0; list-style: none; }
+.profile-links li + li { margin-top: 0.3rem; }
+.profile-links a { color: inherit; text-decoration: none; }
+.profile-links a:hover { color: var(--link); text-decoration: underline; }
+
+.page-content { min-width: 0; max-width: 58rem; }
+.page-content h1,
+.page-content h2,
+.page-content h3 { line-height: 1.3; color: #343b42; }
+.page-content h1 { margin: 2.75rem 0 1.2rem; font-size: 1.8rem; }
+.page-content h1:first-of-type { margin-top: 0; }
+.page-content h2 { margin: 2rem 0 1rem; font-size: 1.4rem; }
+.page-content h3 { margin: 1.5rem 0 0.65rem; font-size: 1.15rem; }
+.page-content p { margin: 0 0 1.2rem; }
+.page-content ul,
+.page-content ol { padding-left: 1.5rem; margin: 0 0 1.2rem; }
+.page-content li + li { margin-top: 0.35rem; }
+.page-content blockquote {
+  margin: 1.5rem 0;
+  padding: 0.25rem 1.25rem;
+  border-left: 3px solid var(--border);
+  font-style: italic;
+}
+.page-content blockquote p:last-child { margin-bottom: 0; }
+.page-content a { overflow-wrap: anywhere; }
+.page-content pre { overflow-x: auto; padding: 1rem; background: #f5f6f7; }
+.page-content code { font-size: 0.95em; }
+.page-content table { border-collapse: collapse; display: block; overflow-x: auto; }
+.page-content th,
+.page-content td { padding: 0.5rem 0.75rem; border: 1px solid var(--border); }
+.page-content hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+[id] { scroll-margin-top: 6rem; }
+.anchor { display: block; }
+
+@media (max-width: 55rem) {
+  .site-layout { grid-template-columns: 11rem minmax(0, 1fr); gap: 2rem; }
+}
+
+@media (max-width: 44rem) {
+  .masthead { position: static; }
+  .navigation { flex-wrap: wrap; gap: 0.25rem 1.5rem; padding: 0.75rem 1.25rem; }
+  .navigation ul { gap: 0.25rem 1.25rem; }
+  .site-layout { grid-template-columns: 1fr; margin-top: 1.75rem; padding: 0 1.25rem; }
+  .profile { position: static; display: flex; gap: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 1.75rem; }
+  .profile-avatar { flex: 0 0 5rem; width: 5rem; height: 5rem; }
+  .profile-details { min-width: 0; }
+  .profile-name { margin-top: 0; }
+  .profile-bio,
+  .profile-description { margin-bottom: 0.5rem; }
+  .profile-links { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+  .profile-links li + li { margin-top: 0; }
+  .page-content h1 { font-size: 1.65rem; }
+  [id] { scroll-margin-top: 1rem; }
+}
+
+@media print {
+  .masthead, .skip-link { display: none; }
+  .site-layout { display: block; margin: 0; padding: 0; }
+  .profile { position: static; margin-bottom: 2rem; }
+  .profile-avatar { display: none; }
+  .page-content { max-width: none; }
+}

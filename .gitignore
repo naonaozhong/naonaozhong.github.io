@@ -1,3 +1,45 @@
-_site/
-push.sh
+# Dependencies, builds, and caches
+node_modules/
+/dist/
+/_site/
+.cache/
+.eleventy-cache/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+/google_scholar_crawler/results/
+
+# Local tests, reports, and implementation notes
+/test/
+/tests/
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+/Summary/
+
+# Local environment and tooling
+.env
+.env.*
+!.env.example
+/.agents/
+/.codex/
+/.aws/
+.idea/
+/push.sh
+
+# Logs, temporary files, and operating-system metadata
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
 .DS_Store
+Thumbs.db
+*:Zone.Identifier

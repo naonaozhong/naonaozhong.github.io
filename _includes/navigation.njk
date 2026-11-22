@@ -1,0 +1,10 @@
+<header class="masthead">
+  <nav class="navigation" aria-label="Main navigation">
+    <a class="home-link" href="/#about-me">Homepage</a>
+    <ul>
+      {% for link in navigation %}
+      <li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

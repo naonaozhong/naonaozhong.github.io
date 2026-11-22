@@ -61,6 +61,8 @@ permalink: /example/
 
 在仓库 **Settings → Pages → Build and deployment** 中，将 **Source** 设为 **GitHub Actions**。这是启用[自定义构建工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)所需的一次性设置。
 
+请勿保留 **Deploy from a branch**：它会启动 GitHub 自带的旧 Jekyll 工作流，即使两套工作流都成功，也可能将 README 页面覆盖到 Eleventy 网站上。新部署任务会检查发布来源，设置不正确时停止并显示设置链接。切换来源后，在仓库 Actions 页面选择 **Build and deploy website → Run workflow**，重新发布完整网站。
+
 `.github/workflows/pages.yml` 在推送到 `main` 时，依次执行依赖安装、`npm run build`、上传 `dist/`、部署。Pull request 只构建，不发布。本地测试不上传，也不在 GitHub Actions 中执行。网站地址继续使用 **https://naonaozhong.github.io**。本地预览无需提交或推送。
 
 旧的 Ruby 构建配置、Sass vendor、jQuery 插件和定时 Scholar 工作流已经移除。`google_scholar_crawler/` 作为独立的可选 Python 工具保留，不参与网站安装、构建和部署。

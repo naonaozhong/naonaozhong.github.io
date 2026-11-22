@@ -47,6 +47,8 @@ The homepage's `redirect_from` field preserves `/about/` and `/about.html`. No s
 
 In the repository's **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. This is a one-time setting required by [GitHub's custom workflow setup](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
+Keep **Deploy from a branch** disabled: it starts GitHub's legacy Jekyll workflow, which can publish this README over the Eleventy website even when both workflows succeed. The deployment job checks the publishing source and stops with a settings link if it is incorrect. After changing the source, run **Build and deploy website → Run workflow** from the repository's Actions tab to republish the website.
+
 The workflow at `.github/workflows/pages.yml` installs locked dependencies, runs `npm run build`, uploads `dist/`, and deploys pushes to `main`. Pull requests run the build without deploying. Local tests are not uploaded or run in GitHub Actions. The site stays at **https://naonaozhong.github.io**.
 
 The old Jekyll/GitHub Pages gem bundle, Sass vendors, jQuery plugins, and scheduled Scholar workflow have been removed. `google_scholar_crawler/` remains an independent optional Python utility; it is not installed, run, or published by the website workflow.
